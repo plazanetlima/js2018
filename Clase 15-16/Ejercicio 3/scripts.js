@@ -7,7 +7,7 @@
         4 - es par
         5 - es impar
 */
-
+/*
 let num = parseInt(prompt('Introduce un número'))
 
 for(let i=1; i<=num; i++){
@@ -16,4 +16,17 @@ for(let i=1; i<=num; i++){
     }else{
         console.log(`${i} - es impar`);
     }
+}
+*/
+const resultado = document.getElementById('resultado');
+
+let numero = parseInt(prompt('Escriba un número para listar los pares e impares'));
+
+for(let i=1; i<=numero; i++){
+    if(i%2 == 0)
+        //resultado.textContent = `${i} - es par <br> `;
+        document.body.innerHTML = i + " - es par <br>";
+    else
+        //resultado.textContent = `${i} - es impar <br> `;
+        document.body.innerHTML = i + " - es impar <br>";
 }
